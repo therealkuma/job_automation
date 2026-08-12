@@ -69,7 +69,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mission-section container">
+      {/* <section className="mission-section container">
         <div className="section-heading about-heading">
           <div className="eyebrow"><span className="eyebrow-line" /> 我們相信</div>
           <h2>工具可以更聰明，<br /><span>機會也可以更公平。</span></h2>
@@ -93,7 +93,7 @@ export default function About() {
             <p>清楚說明流程與通知，尊重每一份資料，也讓你知道自動化正在為你做什麼。</p>
           </article>
         </div>
-      </section>
+      </section> */}
 
       <section className="founder-section container">
         <div className="founder-card">
