@@ -10,11 +10,11 @@
 - [x] Keep the live Google Form URL connected to the primary CTA.
 - [x] Verify the rewritten page on desktop and mobile.
 - [x] Save and deliver the updated website version.
-- [ ] Confirm the GitHub repository owner, repository name, and preferred visibility.
-- [ ] Audit and prepare Vite base-path and GitHub Pages deployment configuration.
-- [ ] Add a GitHub Actions workflow that builds and deploys the static site to GitHub Pages.
-- [ ] Push the code to the selected GitHub repository.
-- [ ] Enable GitHub Pages using the GitHub Actions deployment source.
-- [ ] Configure `www.komi-ai.com` as the GitHub Pages custom domain.
-- [ ] Add and verify the required Cloudflare DNS record for `www`.
-- [ ] Validate HTTPS, the custom domain, and the Google Form CTA after DNS propagation.
+- [x] Confirm the GitHub repository owner, repository name, and preferred visibility.
+- [x] Audit and prepare Vite base-path and GitHub Pages deployment configuration.
+- [x] Add a GitHub Actions workflow that builds and deploys the static site to GitHub Pages.
+- [x] Push the code to the selected GitHub repository.
+- [x] Enable GitHub Pages using the GitHub Actions deployment source.
+- [x] Configure `www.komi-ai.com` as the GitHub Pages custom domain.
+- [x] Add and verify the required Cloudflare DNS record for `www`.
+- [x] Validate HTTPS, the custom domain, and the Google Form CTA after DNS propagation.
