@@ -21,4 +21,4 @@
 - [x] Add a separate About page route with the nonprofit mission and founder introduction.
 - [x] Replace the top navigation KOMI AI item with an ABOUT link.
 - [x] Add a YouTube automation-demo placeholder and verify responsive presentation.
-- [ ] Commit the About page update and redeploy it to GitHub Pages.
+- [x] Commit the About page update and redeploy it to GitHub Pages.
