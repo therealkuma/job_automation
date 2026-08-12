@@ -18,3 +18,7 @@
 - [x] Configure `www.komi-ai.com` as the GitHub Pages custom domain.
 - [x] Add and verify the required Cloudflare DNS record for `www`.
 - [x] Validate HTTPS, the custom domain, and the Google Form CTA after DNS propagation.
+- [x] Add a separate About page route with the nonprofit mission and founder introduction.
+- [x] Replace the top navigation KOMI AI item with an ABOUT link.
+- [x] Add a YouTube automation-demo placeholder and verify responsive presentation.
+- [ ] Commit the About page update and redeploy it to GitHub Pages.

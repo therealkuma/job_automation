@@ -51,7 +51,7 @@ export default function Home() {
         <nav className="nav-links" aria-label="主要導覽">
           <a href="#how-it-works">運作方式</a>
           <a href="#application">開始申請</a>
-          <a href="https://www.komi-ai.com" target="_blank" rel="noreferrer">KOMI AI</a>
+          <a href="/about">ABOUT</a>
         </nav>
 
         <a className="nav-action" href={GOOGLE_FORM_URL} target="_blank" rel="noreferrer">
