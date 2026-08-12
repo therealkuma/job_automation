@@ -101,7 +101,7 @@ export default function About() {
           <div className="founder-copy">
             <div className="eyebrow"><span className="eyebrow-line" /> 創辦人</div>
             <h2>Kuma Lin</h2>
-            <p className="founder-role">Accountant · CPA · AI transition</p>
+            <p className="founder-role">Accountant · CPA </p>
             <p>
               Kuma Lin 是一位具 Accountant 與 CPA 專業背景的創辦人，正在從會計與財務領域轉向 AI。一路走來，他看見許多人有能力、有經驗，卻被求職過程中大量重複的工作消耗；因此，他想把自己正在學習的 AI 能力，做成一個真正能幫上忙的工具，讓更多人有機會更快找到適合自己的工作。
             </p>
