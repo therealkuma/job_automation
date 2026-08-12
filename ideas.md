@@ -1,67 +1,70 @@
-# Design Direction: Apply — Join Our Team
+# Komi-AI 申請網站設計方向
 
-## Three Initial Directions
+## 三個初始方向
 
-### Theme Name: Paper Trail
-Very Brief Intro: A warm editorial application experience inspired by tactile paper, annotated margins, and careful typography. It should feel calm, credible, and human without looking corporate.
-Probability: 0.07
+### 主題名稱：Komi Signal
+簡介：沿用 Komi-AI 既有的深色 AI 產品視覺，透過青綠到靛藍的光譜把申請流程做成一個清楚、安心的啟動入口。
+機率：0.08
 
-### Theme Name: Quiet Signal
-Very Brief Intro: A restrained monochrome interface with a single vivid signal color and a narrow, almost architectural layout. It should make the application feel focused, direct, and easy to complete.
-Probability: 0.03
+### 主題名稱：Human Loop
+簡介：以柔和的深藍、低對比卡片與較多留白，強調 AI 接手重複工作、人保留判斷力的溫度。
+機率：0.04
 
-### Theme Name: Soft Utility
-Very Brief Intro: A light, functional system built around quiet color blocks, generous whitespace, and crisp form controls. It should feel approachable and contemporary while keeping the task frictionless.
-Probability: 0.09
+### 主題名稱：Career Console
+簡介：把求職流程呈現成一個輕量的控制台，加入狀態標籤、進度節點與低干擾的資料視覺語言。
+機率：0.06
 
-## Chosen Direction: Paper Trail
+## 採用方向：Komi Signal
 
-### Design Movement
-Contemporary editorial minimalism with references to Swiss print systems, uncoated stationery, and independent studio portfolios. The experience is intentionally composed rather than dashboard-like: an open page, a clear handoff, and one confident next step.
+### 設計運動
+深色 AI-native SaaS 產品設計，參考 Komi-AI 既有網站的近黑海軍藍畫布、玻璃感表面、柔和光暈與 cyan-to-indigo 品牌漸層，但不直接複製其商業文案或頁面結構。
 
-### Core Principles
-1. **Make the next action unmistakable.** Every section should point toward the application handoff without competing with it.
-2. **Let typography do the organizing.** Strong typographic hierarchy replaces decorative UI chrome and keeps the page legible at a glance.
-3. **Use warmth as trust.** Cream paper, graphite ink, and a precise vermilion accent make the process feel personal and deliberate.
-4. **Keep utility visible.** File type guidance, expected completion time, and a clear Google Form handoff reduce uncertainty before the click.
+### 核心原則
+1. **先讓人理解，再讓人行動。** 首屏只保留一個核心動作：開始填寫申請資料。
+2. **把 AI 做成可信任的協作者。** 軌道、節點與狀態卡片代表自動化正在工作，而不是製造裝飾性的科技感。
+3. **繁體中文要自然、直接。** 所有申請說明都使用臺灣使用者容易理解的中文，只有品牌名稱保留 `KOMI AI`。
+4. **深色不等於沉重。** 用高對比文字、細緻邊框與少量明亮漸層讓內容保持清楚。
 
-### Color Philosophy
-The base is a warm paper tone rather than stark white, making the page feel considered and approachable. Graphite provides the editorial ink and keeps long copy soft but readable. A vermilion-orange accent functions like a hand-marked editorial note: it appears only where attention or action is required, so the call to apply feels like a deliberate signal rather than a generic button.
+### 色彩哲學
+近黑海軍藍 `#050817` 是讓內容與光暈浮現的安靜背景；青綠 `#27E3CF` 是品牌行動色，代表啟動與進展；靛藍 `#8B8DFF` 和紫色 `#B879FF` 用於 AI 的深度與可能性。漸層只出現在品牌 mark、主 CTA 和 headline emphasis，避免整頁變成無差別的霓虹。
 
-### Layout Paradigm
-Use a left-anchored reading rail with an offset application card that enters from the right on larger screens. The page should feel like a single sheet with a margin system: a small running header, an oversized headline, a concise explanation, then a structured checklist and one handoff card. On mobile, the rail collapses into a linear reading order with the card immediately after the action statement.
+### 版面範式
+採用不對稱雙欄首屏：左側是中文主張與表單 CTA，右側是由軌道、核心節點與狀態卡組成的 AI 求職視覺。下方以三步流程與一張申請資料卡把抽象服務落地，手機版則改成單欄閱讀順序。
 
-### Signature Elements
-- A thin vermilion vertical rule that marks the application journey and repeats as a small accent in the form card.
-- A running header with a compact mark, section label, and a quiet “2–3 min” completion cue.
-- Paper-like surfaces with subtle grain, hairline borders, and offset shadow rather than rounded dashboard cards.
+### 簽名元素
+1. Komi-AI 原站的圓角漸層 logo tile 與六角形圖示。
+2. 由 cyan、indigo、violet 組成的軌道式 AI 核心視覺。
+3. `LIVE` 狀態 pill、細格線背景與低透明玻璃卡片。
 
-### Interaction Philosophy
-Interactions should feel like handling a well-made form: buttons respond with a small press and a shift in weight, focus states are visible as vermilion underlines, and the resume drop zone becomes slightly warmer when active. The Google Form handoff should open in a new tab so the applicant never loses the context of the application page.
+### 互動哲學
+CTA 要像啟動一個可靠的工作流程：hover 時增加亮度與光暈，active 時輕微縮放，focus 時使用青綠外框。表單欄位預覽保持靜態清楚，不讓裝飾性動畫搶走申請動作。
 
-### Animation
-Entrance motion is a restrained paper reveal: the main rail fades in and translates upward 12px, then the application card follows with a 60ms delay. Hover transitions stay under 220ms and move only opacity, color, border, or transform. The accent rule can extend a few pixels on hover, but no element should bounce or loop. Respect `prefers-reduced-motion` by removing entrance transforms and keeping only essential state transitions.
+### 動畫
+保留短促、低干擾的 transform 與 opacity transition，卡片 hover 上移 4px，按鈕按下縮放至 0.97。AI 軌道維持靜態，讓畫面在低效能裝置上仍然穩定；遵守 `prefers-reduced-motion`。
 
-### Typography System
-Use **DM Serif Display** for the main headline to give the page a memorable editorial voice, paired with **DM Sans** for body copy, labels, and action text. Headline scale is large and tightly set on desktop, with a readable 1.15 line-height; body copy stays around 1rem with generous line-height; uppercase metadata uses small tracking and a slightly heavier weight. Avoid Inter and default browser typography.
+### 字體系統
+英文品牌與數字使用 Space Grotesk，繁體中文使用 Noto Sans TC。主標以大尺寸、緊密字距建立產品感；輔助文字維持 1.8–1.9 行高，確保中文閱讀舒適。
 
-### Brand Essence
-Apply — Join Our Team is a focused application doorway for thoughtful candidates who want a clear, respectful first step; it is different because it treats the application like a considered editorial invitation rather than a generic recruiting portal.
+### 品牌本質
+KOMI AI 是一個把求職重複工作交給 AI、讓使用者保留更多時間準備下一個機會的自動化入口；它不只是表單，而是申請流程的啟動點。
 
-Personality adjectives: **considered, warm, direct**.
+個性形容：**聰明、可靠、向前。**
 
-### Brand Voice
-Headlines are concise and quietly confident. CTAs are verbs with a clear destination. Microcopy anticipates practical questions without sounding apologetic or over-explaining.
+### 品牌語氣
+標題簡短、有動能但不誇大；CTA 使用清楚動詞；微文案直接交代資料用途與時程。
 
-Example lines:
-- “Bring your point of view.”
-- “A short form. A clear next step.”
+示例：
+- 「讓AI幫你找工作」
+- 「把重複的事交給 AI，把時間留給下一個機會。」
 
-### Wordmark & Logo
-The mark is a compact open-square symbol with one missing corner, suggesting an unfinished page that becomes complete when a candidate enters it. It should be drawn as a bold, text-free graphic symbol and used beside the wordmark, never replaced by a generic text logo.
+### Logo 與字標
+沿用 Komi-AI 原站的圓角方形漸層底、深色六角形線條與 `KOMI AI` 字標。網站 favicon 使用同一個六角形 mark，確保品牌在瀏覽器分頁中仍然可辨識。
 
-### Signature Brand Color
-**Vermilion note — `#E65336`**. It is warm enough to feel human, saturated enough to guide attention, and distinctive against the paper-and-graphite system.
+### 簽名品牌色
+**Komi Cyan — `#27E3CF`**。這是頁面中代表啟動、確認與 AI 工作狀態的專屬亮色。
 
-### File-Level Design Reminder
-Keep this direction visible while editing: contemporary editorial minimalism; warm paper background; graphite ink; vermilion note accent; left reading rail plus offset form card; DM Serif Display + DM Sans; hairline borders and restrained motion; no excessive rounded cards, gradients, or centered dashboard layouts.
+## Style Decisions
+
+- 下半部流程卡片必須延續 Komi Signal 的節點、軌道與狀態語言，而不是回到一般 SaaS 卡片。
+- 主要轉換點必須看起來像「啟動求職流程」；Komi Cyan 只用於主要動作、進度確認與 AI 狀態。
+- `KOMI AI` 字標使用 Space Grotesk 的產品化字距與 `AI` 青綠色分詞，與漸層六角形 mark 成為一組可辨識的品牌單位。
