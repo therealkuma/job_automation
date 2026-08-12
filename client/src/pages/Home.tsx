@@ -146,7 +146,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <a className="gradient-button wide-button" href={GOOGLE_FORM_URL} target="_blank" rel="noreferrer">
+          <a className="gradient-button wide-button" href={GOOGLE_FORM_URL} target="_blank" rel="noreferrer" style={{ fontSize: "16px" }}>
             開始填寫 Google 表單 <ArrowRight size={17} strokeWidth={2} aria-hidden="true" />
           </a>
           <p className="panel-footnote"><ShieldCheck size={14} strokeWidth={1.8} aria-hidden="true" /> 履歷上傳可能需要登入 Google 帳戶</p>
