@@ -116,21 +116,14 @@ export default function About() {
           <h2>AI 如何陪你，<br /><span>走完求職流程。</span></h2>
           <p>影片即將上線，將示範從履歷輸入、機會整理到申請摘要的完整自動化流程。</p>
         </div>
-          <a
-            className="video-placeholder"
-            href="https://youtu.be/nd84bJyVwzs"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="觀看 YouTube 自動化流程示範影片"
-          >
-          </a>
-        {/* <div className="video-placeholder" role="img" aria-label="YouTube 自動化流程示範影片預留位置">
+      
+         <div className="video-placeholder" role="img" aria-label="YouTube 自動化流程示範影片預留位置">
           <div className="video-placeholder-grid" aria-hidden="true" />
           <div className="video-play"><Play size={27} fill="currentColor" strokeWidth={1.5} aria-hidden="true" /></div>
           <div className="video-meta"><span>YOUTUBE / WALKTHROUGH</span><span>COMING SOON</span></div>
           <strong>自動化流程示範</strong>
           <small>影片上線後，點擊此處觀看完整說明</small>
-        </div> */}
+        </div> 
       </section>
 
       <section className="about-cta container">
