@@ -68,7 +68,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mission-section container">
+      {/* <section className="mission-section container">
         <div className="section-heading about-heading">
           <div className="eyebrow"><span className="eyebrow-line" /> 我們相信</div>
           <h2>工具可以更聰明，<br /><span>機會也可以更公平。</span></h2>
@@ -92,7 +92,7 @@ export default function About() {
             <p>清楚說明流程與通知，尊重每一份資料，也讓你知道自動化正在為你做什麼。</p>
           </article>
         </div>
-      </section>
+      </section> */}
 
       <section className="founder-section container">
         <div className="founder-card">
@@ -100,7 +100,7 @@ export default function About() {
           <div className="founder-copy">
             <div className="eyebrow"><span className="eyebrow-line" /> 創辦人</div>
             <h2>Kuma Lin</h2>
-            <p className="founder-role">Accountant · CPA · AI transition</p>
+            <p className="founder-role">Accountant · CPA </p>
             <p>
               Kuma Lin 是一位具 Accountant 與 CPA 專業背景的創辦人，正在從會計與財務領域轉向 AI。一路走來，他看見許多人有能力、有經驗，卻被求職過程中大量重複的工作消耗；因此，他想把自己正在學習的 AI 能力，做成一個真正能幫上忙的工具，讓更多人有機會更快找到適合自己的工作。
             </p>
@@ -115,7 +115,6 @@ export default function About() {
           <h2>AI 如何陪你，<br /><span>走完求職流程。</span></h2>
           <p>觀看從履歷輸入、機會整理到申請摘要的完整自動化流程，了解 KOMI AI 如何協助你開始找工作。</p>
         </div>
-
         <div className="video-placeholder" role="group" aria-label="YouTube 自動化流程示範影片">
           <iframe
             className="video-embed"
