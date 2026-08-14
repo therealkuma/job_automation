@@ -11,7 +11,6 @@ import {
   Check,
   Hexagon,
   HeartHandshake,
-  Play,
   Sparkles,
 } from "lucide-react";
 
@@ -114,15 +113,20 @@ export default function About() {
         <div className="video-intro">
           <div className="eyebrow"><span className="eyebrow-line" /> 接下來看看</div>
           <h2>AI 如何陪你，<br /><span>走完求職流程。</span></h2>
-          <p>影片即將上線，將示範從履歷輸入、機會整理到申請摘要的完整自動化流程。</p>
+          <p>觀看從履歷輸入、機會整理到申請摘要的完整自動化流程，了解 KOMI AI 如何協助你開始找工作。</p>
         </div>
 
-        <div className="video-placeholder" role="img" aria-label="YouTube 自動化流程示範影片預留位置">
-          <div className="video-placeholder-grid" aria-hidden="true" />
-          <div className="video-play"><Play size={27} fill="currentColor" strokeWidth={1.5} aria-hidden="true" /></div>
-          <div className="video-meta"><span>YOUTUBE / WALKTHROUGH</span><span>COMING SOON</span></div>
-          <strong>自動化流程示範</strong>
-          <small>影片上線後，點擊此處觀看完整說明</small>
+        <div className="video-placeholder" role="group" aria-label="YouTube 自動化流程示範影片">
+          <iframe
+            className="video-embed"
+            src="https://www.youtube.com/embed/nd84bJyVwzs?rel=0&modestbranding=1"
+            title="KOMI AI job automation tutorial"
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+          <div className="video-meta video-meta-overlay" aria-hidden="true"><span>YOUTUBE / WALKTHROUGH</span><span>PLAY INLINE</span></div>
         </div>
       </section>
 

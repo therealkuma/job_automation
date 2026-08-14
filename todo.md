@@ -22,3 +22,8 @@
 - [x] Replace the top navigation KOMI AI item with an ABOUT link.
 - [x] Add a YouTube automation-demo placeholder and verify responsive presentation.
 - [x] Commit the About page update and redeploy it to GitHub Pages.
+- [x] Confirm the inline video source format and hosting URL.
+- [x] Verify the replacement YouTube source `nd84bJyVwzs` before final deployment.
+- [x] Replace the About-page placeholder with an inline YouTube player.
+- [x] Preserve in-page playback, responsive sizing, and fullscreen controls.
+- [ ] Verify the video frame on desktop and mobile and redeploy the update.
